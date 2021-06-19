@@ -1,0 +1,157 @@
+:root {
+    --outer-space: white;
+    --dark-grey: rgb(23, 24, 32);
+    --light-tuiquoise: rgb(111, 186, 189);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+    font-size: 1.75rem;
+    line-height: 1.5;
+    color: var(--dark-grey);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.625rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 {
+    /* 4rem = 40px (4 * 10px) */
+    font-size: 4rem;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+  }
+  
+  h4 {
+    font-size: 2.5rem;
+  }
+  
+  h5 {
+    font-size: 2rem;
+  }
+  
+  h6 {
+    font-size: 1.5rem;
+  }
+  
+  p {
+    margin-bottom: 1rem;
+  }
+  
+
+.header {
+    padding: 10px 70px 10px 0;
+    background-color: var(--dark-grey);
+    color: var(--light-tuiquoise);
+}
+
+.header h1 {
+    display: inline-block;
+    padding-left: 70px;
+    background-color: var(--light-tuiquoise);
+    color: var(--dark-grey);
+    font-size: 48px;
+}
+
+
+.header nav {
+    padding-top: 15px;
+    float: right;
+    font-size: 2rem;
+}
+/* 
+.header nav ul {
+    list-style: none;
+    list-style-type: none;
+}  */
+
+
+.header nav ul li {
+    display: inline-block;
+}
+
+a {
+    color: var(--light-tuiquoise);
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 5px;
+    border-bottom: 3px solid var(--light-tuiquoise);
+}
+
+.hero-img {
+    background-image: url("../images/portfolio-background.jpg");
+    height: 150px;
+    padding: 20px 70px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.hero-img h2 {
+    padding: 7px;
+    font-weight: 700;
+    display: inline-block;
+    background-color: var(--light-tuiquoise);
+} 
+
+.content {
+    padding: 0 60px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block {
+    margin: 30px 0;
+}
+
+.block-title {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+h3 {
+    flex: 1;
+    max-width: 70%;
+    font-size: 4.5rem;
+    margin-right: 20px;
+    padding: 0 15px;
+    text-align: right;
+    border-right: 3px solid var(--dark-grey);
+}
+
+.block-descr {
+    width: 80%;
+    font-size: 1.5rem;
+    padding: 0 10px;
+}
+
+.block-descr p {
+    line-height: 2.5rem;
+    word-break: break-all;
+    white-space: normal;
+}
+
+
+
+
+
+
+
+
