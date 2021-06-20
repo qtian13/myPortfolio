@@ -271,7 +271,15 @@ section {
 
 
 @media screen and (max-width: 767px) {
-    
+    .header h1 {
+        text-align: center;
+        padding: 0px;
+    }
+
+    .header ul {
+        padding-right: 0px;
+        justify-content: center;
+    }
 }
 
 
