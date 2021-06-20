@@ -1,7 +1,7 @@
 :root {
     --outer-space: white;
     --dark-grey: rgb(23, 24, 32);
-    --light-tuiquoise: rgb(111, 186, 189);
+    --light-tuiquoise: rgb(187, 221, 207);
     --dark-green: rgb(74, 96, 104);
 }
 
@@ -166,12 +166,12 @@ h3 {
 }
 
 #project1 {
-    height: 500px;
+    height: 400px;
     width: 100%;
 }
 
 .project {
-    height: 250px;
+    height: 170px;
     width: 50%;
     padding: 10px;
 }
@@ -179,7 +179,48 @@ h3 {
 .display-background {
     height: 100%;
     border: 5px solid var(--light-tuiquoise);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.project-title {
+    padding: 5px;
+    background-color: var(--light-tuiquoise);
+    color: var(--dark-grey);
+    position: absolute;
+    bottom: 20px;
+}
+
+.project-title p, .project-title h4 {
+    margin: 5px;
+}
+
+.display-background {
+    background-size: cover;
+    background-position: center;
+}
+
+#project1 .display-background{
+    background-image: url("../images/cheatsheet.jpg");
+}
+
+#project2 .display-background{
+    background-image: url("../images/portfolio.png");
+}
+
+#project3 .display-background{
+    background-image: url("../images/Code-Refactoring.jpg");
+}
+
+#project4 .display-background{
+    background-image: url("../images/pastelpuzzles.jpg");
+}
+
+#project5 .display-background{
+    background-image: url("../images/runbuddy.jpg");
+}
+
 
 
 
