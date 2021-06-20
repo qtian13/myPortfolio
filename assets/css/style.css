@@ -2,6 +2,7 @@
     --outer-space: white;
     --dark-grey: rgb(23, 24, 32);
     --light-tuiquoise: rgb(111, 186, 189);
+    --dark-green: rgb(74, 96, 104);
 }
 
 html {
@@ -10,7 +11,6 @@ html {
 
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
     font-size: 1.75rem;
     line-height: 1.5;
     color: var(--dark-grey);
@@ -54,13 +54,13 @@ h1 {
   
 
 .header {
-    padding: 10px 70px 10px 0;
+    padding: 10px 70px;
     background-color: var(--dark-grey);
-    color: var(--light-tuiquoise);
 }
 
 .header h1 {
     display: inline-block;
+    margin-left: -70px;
     padding-left: 70px;
     background-color: var(--light-tuiquoise);
     color: var(--dark-grey);
@@ -69,6 +69,7 @@ h1 {
 
 
 .header nav {
+    color: var(--light-tuiquoise);
     padding-top: 15px;
     float: right;
     font-size: 2rem;
@@ -80,16 +81,25 @@ h1 {
 }  */
 
 
-.header nav ul li {
+nav ul li {
     display: inline-block;
 }
 
-a {
+.header a {
     color: var(--light-tuiquoise);
+    border-bottom: 3px solid var(--light-tuiquoise);
+}
+
+.content a {
+    color: var(--dark-green);
+    border-bottom: 3px solid var(--dark-green);
+    font-size: 2rem;
+}
+
+a {
     text-decoration: none;
     padding: 5px 10px;
     margin: 5px;
-    border-bottom: 3px solid var(--light-tuiquoise);
 }
 
 .hero-img {
@@ -108,6 +118,7 @@ a {
 } 
 
 .content {
+    color: var(--dark-green);
     padding: 0 60px;
 }
 
@@ -143,9 +154,20 @@ h3 {
 }
 
 .block-descr p {
+    margin-bottom: 20px;
     line-height: 2.5rem;
     word-break: break-all;
     white-space: normal;
+}
+
+.nav-link {
+    margin: auto;
+    flex:1;
+}
+
+.nav-link ul{
+    display: flex;
+    justify-content: space-around;
 }
 
 
