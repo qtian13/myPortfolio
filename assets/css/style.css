@@ -17,7 +17,7 @@ body {
     line-height: 1.5;
     color: var(--dark-grey);
 }
-/* 
+
 h1,
 h2,
 h3,
@@ -27,7 +27,7 @@ h6 {
   margin-bottom: 0.625rem;
   font-weight: 700;
   line-height: 1.1;
-} */
+}
 
 h1 {
     font-size: 4rem;
@@ -35,6 +35,10 @@ h1 {
   
   h2 {
     font-size: 3.5rem;
+  }
+
+  h3 {
+      font-size: 4.5rem;
   }
   
   h4 {
@@ -119,7 +123,6 @@ section {
     display: flex;
     justify-content: flex-end;
     width: 1%;
-    font-size: 4.5rem;
     margin-right: 20px;
     padding: 0 15px;
     text-align: right;
@@ -265,6 +268,9 @@ section {
     .block-descr {
         margin-top: 20px;
     }
+    .project a .project-title {
+        bottom: 0px;
+    }
 
     .nav-link ul {
         padding: auto;
@@ -273,6 +279,18 @@ section {
 
 
 @media screen and (max-width: 767px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 4rem;
+    }
+    h4 {
+        font-size: 2rem;
+    }
     .header h1 {
         text-align: center;
         padding: 0px;
@@ -292,9 +310,27 @@ section {
         text-decoration: underline;
     }
 
+    .content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .block-title {
         justify-content: center;
     }
+
+    .project {
+        width: 100%;
+    }
+
+    .project-title {
+        width: 100%;
+    }
+
+    .project-title h4, .project-title p {
+        display: inline-block;
+    }
+
 }
 
 
