@@ -117,7 +117,7 @@ section {
 .block-title{
     display: flex;
     justify-content: flex-end;
-    max-width: 1%;
+    width: 1%;
     font-size: 4.5rem;
     margin-right: 20px;
     padding: 0 15px;
@@ -233,11 +233,39 @@ section {
 }
 
 @media screen and (max-width: 991px) {
-    /* .header h1, .main-nav, .block-title, .block-descr  {
+    .header h1, .main-nav, .title-box, .block-descr  {
         width: 100%;
-    } */
+    }
     header, section {
         flex-direction: column;
+    }
+    
+    header ul {
+        justify-content: flex-end;
+    }
+
+    .block {
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 20px 60px;
+    }
+
+    .block-title {
+        justify-content: flex-start;
+        width: 100%;
+        border-right-style: none;
+        border-bottom: 3px solid var(--dark-green);
+        margin: auto;
+    }
+
+    .block-descr {
+        margin-top: 20px;
+    }
+
+    .nav-link ul {
+        padding: auto;
     }
 }
 
