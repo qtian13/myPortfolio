@@ -254,7 +254,7 @@ section {
     }
 
     .content {
-        padding: 20px 60px;
+        padding: 20px 40px;
     }
 
     .block-title {
@@ -269,7 +269,7 @@ section {
         margin-top: 20px;
     }
     .project a .project-title {
-        bottom: 0px;
+        bottom: -4px;
     }
 
     .nav-link ul {
@@ -308,6 +308,12 @@ section {
     .nav-link a, .main-nav a {
         border-style: none;
         text-decoration: underline;
+    }
+
+    .hero-img h2{
+        width: 100%;
+        margin: 0px;
+        text-align: center;
     }
 
     .content {
