@@ -31,24 +31,24 @@ h6 {
 
 h1 {
     font-size: 4rem;
-  }
+}
   
-  h2 {
-    font-size: 3.5rem;
-  }
+h2 {
+  font-size: 3.5rem;
+}
 
-  h3 {
-      font-size: 4.5rem;
-  }
-  
-  h4 {
-    font-size: 2.5rem;
-  }
-  
-  p {
-    margin-bottom: 1.5rem;
-  }
-  
+h3 {
+    font-size: 4.5rem;
+}
+
+h4 {
+  font-size: 2.5rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
 
 .header {
     padding: 10px 0px;
@@ -133,6 +133,14 @@ section {
     width: 80%;
     font-size: 1.3rem;
     padding: 0 10px;
+}
+
+#profile-photo {
+    float: right;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    padding: 5px;
 }
 
 .block-descr p {
@@ -268,6 +276,7 @@ section {
     .block-descr {
         margin-top: 20px;
     }
+
     .project a .project-title {
         bottom: -4px;
     }
@@ -323,6 +332,12 @@ section {
 
     .block-title {
         justify-content: center;
+    }
+
+
+    #profile-photo {
+        width: 150px;
+        height: 150px;
     }
 
     .project {
