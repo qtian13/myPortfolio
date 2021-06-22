@@ -1,5 +1,5 @@
 # Create My Portfolio
-This project is to create an attractive and functional my portfolio for self introduction and projects display.
+This project is to create an attractive and functional portfolio for self introduction and projects display.
 
 ## Getting Started
 ```console

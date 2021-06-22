@@ -1,5 +1,4 @@
 :root {
-    --outer-space: white;
     --dark-grey: rgba(5, 6, 19, 0.8);
     --light-tuiquoise: rgba(187, 221, 207, 1);
     --dark-green: rgba(74, 96, 104, 0.9);
@@ -8,10 +7,12 @@
 }
 
 html {
+    /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
     font-size: 62.5%;
 }
 
 body {
+    /* Sans Serif font stack is implemented to help select the best font for each type of computer operating system */
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.75rem;
     line-height: 1.5;
@@ -49,24 +50,26 @@ p {
   margin-bottom: 1.5rem;
 }
 
-
-.header {
+/* Header Start */
+/* header flex horizontally to center the .page-title and navigation bar */
+header {
     padding: 10px 0px;
+    padding-bottom: 10px;
     background-color: var(--dark-grey);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.header h1 {
+header h1 {
     padding: 0 10px 0 70px;
     background-color: var(--light-tuiquoise);
     color: var(--dark-grey);
 }
 
+/* navigation flex horizontally for desktop screen */
 nav ul {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
@@ -74,18 +77,17 @@ nav ul {
     padding-right: 70px;
 }
 
-.header a {
+.main-nav li a {
     color: var(--light-tuiquoise);
     border-bottom: 3px solid var(--light-tuiquoise);
-}
-
-.header a {
     font-size: 2rem;
     text-decoration: none;
     padding: 5px 10px;
     margin: 5px;
 }
 
+/* Strip Image Starts */
+/* image box flex to ajust the postion and width of .page-subtitle */
 .hero-img {
     background-image: url("../images/portfolio-background.jpg");
     height: 150px;
@@ -93,32 +95,33 @@ nav ul {
     justify-content: flex-end;
     align-items: flex-end;
 }
-.hero-img h2 {
+.page-subtitle {
     margin: auto 70px 20px auto;
     padding: 0px 7px;
     background-color: var(--light-tuiquoise);
 } 
+/* Strip Image Starts */
 
+/* Content Starts */
 .content {
     color: var(--dark-green);
     padding: 0 70px;
 }
 
 /* About Me Starts */
-section {
-    display: flex;
-}
-
+/* .block flex horizontally: title on the left and description on the right */
 .block {
+    display: flex;
     margin: 40px 0;
 }
 
-.title-box {
+.block-title-box {
     width: 20%;
     display: flex;
     justify-content: flex-end;
 }
 
+/* .block-title one word per line. Text align right */
 .block-title{
     display: flex;
     justify-content: flex-end;
@@ -129,22 +132,19 @@ section {
     border-right: 3px solid var(--dark-green);
 }
 
-.block-descr {
+.block-descr-box {
     width: 80%;
-    font-size: 1.3rem;
+    font-size: 2rem;
     padding: 0 10px;
 }
 
+/* #profile-photo floats right with text wrap around */
 #profile-photo {
     float: right;
     height: 200px;
     width: 200px;
     border-radius: 50%;
     padding: 5px;
-}
-
-.block-descr p {
-    line-height: 2.4rem;
 }
 /* About Me End */
 
@@ -160,7 +160,8 @@ section {
     padding: 10px;
 }
 
-#project1 {
+/* the image of the first project is larger */
+.project:nth-of-type(1) {
     height: 400px;
     width: 100%;
 }
@@ -173,31 +174,7 @@ section {
     border: 5px solid var(--light-tuiquoise);
 }
 
-#project1 .display-background{
-    background-image: url("../images/cheatsheet.jpg");
-}
-
-#project2 .display-background{
-    background-image: url("../images/portfolio.png");
-    background-size: 120% 100%;
-}
-
-#project3 .display-background{
-    background-image: url("../images/Code-Refactoring.jpg");
-    background-size: 100% 150%;
-}
-
-#project4 .display-background{
-    background-image: url("../images/pastelpuzzles.jpg");
-    background-size: 100% 200%;
-}
-
-#project5 .display-background{
-    background-image: url("../images/runbuddy.jpg");
-    background-size: 100% 200%;
-}
-
-.display-background {
+.project-background {
     height: 100%;
     /* background-size: cover; */
     background-position: center;
@@ -206,11 +183,36 @@ section {
     transition: opacity 0.8s;
 }
 
-.display-background:hover {
+.project-background:hover {
     opacity: var(--opacity-hight);
 }
 
-.project a .project-title {
+#project1 .project-background{
+    background-image: url("../images/cheatsheet.jpg");
+    background-size: cover;
+}
+
+#project2 .project-background{
+    background-image: url("../images/portfolio.png");
+    background-size: 120% 100%;
+}
+
+#project3 .project-background{
+    background-image: url("../images/Code-Refactoring.jpg");
+    background-size: 100% 150%;
+}
+
+#project4 .project-background{
+    background-image: url("../images/pastelpuzzles.jpg");
+    background-size: 100% 200%;
+}
+
+#project5 .project-background{
+    background-image: url("../images/runbuddy.jpg");
+    background-size: 100% 200%;
+}
+
+.project-title {
     position: absolute;
     bottom: 20px;
     color: var(--dark-green);
@@ -225,44 +227,45 @@ section {
     margin: 0px 6px 6px 6px;
 }
 
-/* last block */
-.nav-contact {
+/* Contact Me Starts */
+.contact-nav {
     margin: auto 0; 
     width: 80%;   
 }
 
-.nav-contact ul {
+.contact-nav ul {
     justify-content: space-around;
 }
-.nav-link a {
+
+.contact-nav a {
     font-size: 1.8rem;
     text-decoration: none;
     padding: 5px 5px;
-}
-
-.nav-link a {
     color: var(--dark-green);
     border-bottom: 3px solid var(--dark-green);
 }
+/* Contact Me Ends */
 
+/* adjust layout for tablet screen */
 @media screen and (max-width: 991px) {
-    .header h1, .main-nav, .title-box, .block-descr  {
+    h1, .main-nav, .block-title-box, .block-descr-box  {
         width: 100%;
     }
+
     header, section {
         flex-direction: column;
     }
     
-    header ul {
+    .main-nav ul {
         justify-content: flex-end;
-    }
-
-    .block {
-        margin: 10px 0;
     }
 
     .content {
         padding: 20px 40px;
+    }
+
+    .block {
+        margin: 10px 0;
     }
 
     .block-title {
@@ -273,34 +276,34 @@ section {
         margin: auto;
     }
 
-    .block-descr {
+    .block-descr-box {
         margin-top: 20px;
     }
 
-    .project a .project-title {
+    .project-title {
         bottom: -4px;
-    }
-
-    .nav-link ul {
-        padding: auto;
     }
 }
 
-
+/* adjust layout and shrink font size and block size for mobile screen */
 @media screen and (max-width: 767px) {
     h1 {
         font-size: 3.5rem;
     }
+
     h2 {
         font-size: 3rem;
     }
+
     h3 {
         font-size: 4rem;
     }
+
     h4 {
         font-size: 2rem;
     }
-    .header h1 {
+
+    header h1 {
         text-align: center;
         padding: 0px;
     }
@@ -314,7 +317,7 @@ section {
         padding-right: 0px;
     }
 
-    .nav-link a, .main-nav a {
+    .contact-nav a, .main-nav a {
         border-style: none;
         text-decoration: underline;
     }
@@ -334,7 +337,6 @@ section {
         justify-content: center;
     }
 
-
     #profile-photo {
         width: 150px;
         height: 150px;
@@ -352,6 +354,9 @@ section {
         display: inline-block;
     }
 
+    .project:nth-of-type(1) {
+        height: 300px;
+    }
 }
 
 
