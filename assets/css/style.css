@@ -237,7 +237,7 @@ nav ul {
     justify-content: space-around;
 }
 
-.contact-nav a {
+.contact-nav li a {
     font-size: 1.8rem;
     text-decoration: none;
     padding: 5px 5px;
@@ -317,7 +317,7 @@ nav ul {
         padding-right: 0px;
     }
 
-    .contact-nav a, .main-nav a {
+    .contact-nav li a, .main-nav li a {
         border-style: none;
         text-decoration: underline;
     }
@@ -335,6 +335,10 @@ nav ul {
 
     .block-title {
         justify-content: center;
+    }
+
+    .block-descr-box {
+        font-size: 1.3rem;
     }
 
     #profile-photo {
