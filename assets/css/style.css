@@ -155,14 +155,14 @@ nav ul {
 }
 
 .project {
-    height: 170px;
+    height: 370px;
     width: 50%;
     padding: 10px;
 }
 
 /* the image of the first project is larger */
 .project:nth-of-type(1) {
-    height: 400px;
+    height: 600px;
     width: 100%;
 }
 
@@ -188,27 +188,27 @@ nav ul {
 }
 
 #project1 .project-background{
-    background-image: url("../images/cheatsheet.jpg");
+    background-image: url("https://raw.githubusercontent.com/JessGiannini/FeedYourBoredom/main/assets/images/homepage.png");
     background-size: cover;
 }
 
 #project2 .project-background{
-    background-image: url("../images/portfolio.png");
+    background-image: url("https://raw.githubusercontent.com/qtian13/Weather-Dashboard/main/assets/images/desktop_screen.png");
     background-size: 120% 100%;
 }
 
 #project3 .project-background{
-    background-image: url("../images/Code-Refactoring.jpg");
+    background-image: url("https://raw.githubusercontent.com/qtian13/code-quiz/main/assets/images/homepage.png");
     background-size: 100% 150%;
 }
 
 #project4 .project-background{
-    background-image: url("../images/resume.png");
+    background-image: url("https://raw.githubusercontent.com/qtian13/password-generator/main/assets/images/desktop_screen.png");
     background-size: 100% 200%;
 }
 
 #project5 .project-background{
-    background-image: url("../images/runbuddy.jpg");
+    background-image: url("https://raw.githubusercontent.com/qtian13/CSS-cheat-sheet/main/assets/images/desktop_screen.png");
     background-size: 100% 200%;
 }
 
