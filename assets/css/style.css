@@ -2,8 +2,8 @@
     --dark-grey: rgba(5, 6, 19, 0.8);
     --light-tuiquoise: rgba(187, 221, 207, 1);
     --dark-green: rgba(74, 96, 104, 0.9);
-    --opacity-low: .4;
-    --opacity-high: .6;
+    --opacity-low: .5;
+    --opacity-high: .7;
 }
 
 html {
@@ -134,7 +134,7 @@ nav ul {
 
 .block-descr-box {
     width: 80%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 0 10px;
 }
 
@@ -155,14 +155,14 @@ nav ul {
 }
 
 .project {
-    height: 370px;
+    height: 250px;
     width: 50%;
     padding: 10px;
 }
 
 /* the image of the first project is larger */
 .project:nth-of-type(1) {
-    height: 600px;
+    height: 500px;
     width: 100%;
 }
 
@@ -184,35 +184,37 @@ nav ul {
 }
 
 .project-background:hover {
-    opacity: var(--opacity-hight);
+    opacity: var(--opacity-high);
 }
 
 #project1 .project-background{
-    background-image: url("https://raw.githubusercontent.com/JessGiannini/FeedYourBoredom/main/assets/images/homepage.png");
-    background-size: cover;
+    background-image: url("../images/feedYourBoredom.png");
+    background-size: 100% 100%;
 }
 
 #project2 .project-background{
-    background-image: url("https://raw.githubusercontent.com/qtian13/Weather-Dashboard/main/assets/images/desktop_screen.png");
-    background-size: 120% 100%;
+    background-image: url("../images/weatherDashboard.png");
+    background-size: 100% 100%;
 }
 
 #project3 .project-background{
-    background-image: url("https://raw.githubusercontent.com/qtian13/code-quiz/main/assets/images/homepage.png");
-    background-size: 100% 150%;
+    background-image: url("../images/codeQuiz.png");
+    background-size: 100% 100%;
 }
 
 #project4 .project-background{
-    background-image: url("https://raw.githubusercontent.com/qtian13/password-generator/main/assets/images/desktop_screen.png");
-    background-size: 100% 200%;
+    background-image: url("../images/passwordGenerator.png");
+    background-size: 100% 100%;
 }
 
 #project5 .project-background{
-    background-image: url("https://raw.githubusercontent.com/qtian13/CSS-cheat-sheet/main/assets/images/desktop_screen.png");
-    background-size: 100% 200%;
+    background-image: url("../images/cheatSheet.png");
+    background-size: 100% 100%;
 }
 
 .project-title {
+    overflow: hidden;
+    max-width: 100%;
     position: absolute;
     bottom: 20px;
     color: var(--dark-green);
@@ -359,7 +361,7 @@ nav ul {
     }
 
     .project:nth-of-type(1) {
-        height: 300px;
+        height: 340px;
     }
 }
 
