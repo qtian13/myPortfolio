@@ -3,7 +3,7 @@ This project is to create an attractive and functional portfolio for self introd
 
 ## Getting Started
 ```console
-git clone https://github.com/qtian13/qtian13.github.io.git
+git clone https://github.com/qtian13/myPortfolio.git
 ```
 
 ## Built With
@@ -22,7 +22,7 @@ git clone https://github.com/qtian13/qtian13.github.io.git
     * On the mobile screen (screen width less than 768px) The navigation bar change to vertical and the titles of self display sections is centered.
 
 ## Page URL
-https://qtian13.github.io/
+https://qtian13.github.io/myPortfolio/
 
 ## Page Screen Shot with Different Screen Width
 ![fit desktop screen](assets/images/desktop_screen.png)
@@ -32,7 +32,7 @@ https://qtian13.github.io/
 
 ## Author
 Qiushuang Tian
-- [Link to Portfolio Site](https://qtian13.github.io/)
+- [Link to Portfolio Site](https://qtian13.github.io/myPortfolio/)
 - [Link to Github](https://github.com/qtian13)
 - [Link to LinkedIn](https://www.linkedin.com/in/qiushuang-tian-a9754248/)
 
